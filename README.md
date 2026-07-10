@@ -1,5 +1,4 @@
 # Flatten The Stack: A Case Study on Product Sales Analysis
-An End-to-End ELT Pipeline: From Semi-Structured JSON to Relational Power Pivot Intelligence
 
 <img width="1490" height="876" alt="Flatten The Stack Dashboard" src="https://github.com/user-attachments/assets/71c8d877-42fb-46c9-8754-e300aa6e8a60" />
 
@@ -42,7 +41,7 @@ COUNT(sales_orders[order_number])
 ## 🧼 Data Cleaning Checklist
 - [x] **JSON Repair:** Stripped triple-quotes (`"""`) and fixed double-escaped quotes (`""`) to make strings parsable.
 - [x] **Whitespace Scrubbing:** Applied `TRIM` to fulfillment labels to remove hidden carriage returns (`_x000D_`).
-- [x] **Calendar Normalization:** Injected "Placeholder Months" via SQL to prevent MoM growth inaccuracies.
+- [x] **Calendar Normalization:** Injected "Placeholder Months" to prevent MoM growth inaccuracies.
 - [x] **Schema Enforcement:** Converted all numeric strings to `DECIMAL` and `INT` types for mathematical precision.
 
 ## 📊 Key Insights
